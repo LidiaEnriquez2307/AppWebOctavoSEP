@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ProyectoOctavoSEP.Models.Teacher> 
+
+<h1>Administración de products</h1>
+
+<table>
+    <thead class="border-primary">
+        <tr>
+            <td>Cédula</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Correo</td>
+            <td>Teléfono</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model){
+        <tr>
+            <td>@item.CI </td>
+            <td>@item.Name </td>
+            <td>@item.LastName</td>
+            <td>@item.Mail </td>
+            <td>@item.Phone </td>
+        </tr>
+        }
+    </tbody>
+</table>
